@@ -31,7 +31,7 @@ function AboutSection() {
             to help businesses modernize operations and deliver better digital experiences.
           </p>
           <p>
-            From startups to growing enterprises, we create scalable, secure, and
+            From startups to growing enterprises, we create scalable, secure and
             business-focused solutions that solve real challenges and support long-term growth.
           </p>
 
