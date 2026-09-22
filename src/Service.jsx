@@ -1,6 +1,6 @@
 import './Service.css'
 import websiteImage from './assets/car.png'
-import mobileImage from './assets/margin.png'
+import mobileImage from './assets/Margin.png'
 import softwareImage from './assets/software.jpeg'
 import cloudImage from './assets/cloud.png'
 import designImage from './assets/ui ux.jpeg'
