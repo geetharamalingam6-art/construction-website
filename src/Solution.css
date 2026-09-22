@@ -1,0 +1,238 @@
+.solution-page-section {
+	padding: 145px 6% 90px;
+	background: #f5f3ff;
+}
+
+.solution-intro {
+	max-width: 800px;
+	margin: 0 auto 70px;
+	text-align: center;
+}
+
+.solution-intro h2 {
+	margin: 0;
+	color: #7c3aed;
+	font-family: 'Space Grotesk', sans-serif;
+	font-size: clamp(38px, 4vw, 54px);
+	line-height: 1.2;
+}
+
+.solution-intro h2 span {
+	background: linear-gradient(100deg, #7c3aed, #f808d4);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	color: transparent;
+}
+
+.solution-intro p {
+	margin: 24px 0 0;
+	color: #5c657c;
+	font-family: 'Space Grotesk', sans-serif;
+	font-size: 22px;
+	line-height: 1.6;
+}
+
+.solution-grid {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 30px;
+}
+
+.solution-item {
+	background: #fff;
+	border-radius: 24px;
+	overflow: hidden;
+	box-shadow: 0 10px 25px rgba(33, 22, 83, 0.04);
+	display: flex;
+	flex-direction: column;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.solution-item:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 15px 35px rgba(124, 58, 237, 0.1);
+}
+
+.solution-img-wrapper {
+	width: 100%;
+	height: 300px;
+	background: #fdfcff;
+	overflow: hidden;
+	border-bottom: 1px solid #ebe9f1;
+}
+
+.solution-img-wrapper img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: top;
+	/* To show the top of the mockups mostly */
+}
+
+.solution-content {
+	padding: 30px 24px;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+.solution-content h3 {
+	margin: 0 0 12px;
+	color: #211653;
+	font-family: 'Space Grotesk', sans-serif;
+	font-size: 24px;
+}
+
+.solution-content p {
+	margin: 0 0 20px;
+	color: #5c657c;
+	font-family: 'Space Grotesk', sans-serif;
+	font-size: 16px;
+	line-height: 1.6;
+}
+
+.solution-content ul {
+	list-style: none;
+	padding: 0;
+	margin: auto 0 0 0;
+	/* push to bottom */
+}
+
+.solution-content ul li {
+	display: flex;
+	align-items: flex-start;
+	gap: 12px;
+	color: #211653;
+	font-family: 'Space Grotesk', sans-serif;
+	font-size: 15px;
+	font-weight: 500;
+	margin-bottom: 10px;
+}
+
+.solution-content ul li:last-child {
+	margin-bottom: 0;
+}
+
+.solution-content ul li b {
+	color: #7c3aed;
+	font-size: 14px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 20px;
+	height: 20px;
+	border: 1.5px solid #7c3aed;
+	border-radius: 50%;
+}
+
+@media (max-width: 1050px) {
+	.solution-grid {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+}
+
+@media (max-width: 760px) {
+	.solution-page-section {
+		padding: 60px 6% 70px;
+	}
+
+	.solution-intro h2 {
+		font-size: 38px;
+	}
+
+	.solution-intro p {
+		font-size: 17px;
+	}
+
+	.solution-grid {
+		grid-template-columns: 1fr;
+		gap: 20px;
+	}
+
+	.solution-cta-section {
+		padding: 70px 6%;
+	}
+	
+	.cta-content p {
+		font-size: 17px;
+		margin-bottom: 30px;
+	}
+	
+	.cta-actions .primary-button,
+	.cta-actions .secondary-button {
+		width: 100%;
+		padding: 14px 20px;
+		font-size: 16px;
+	}
+}
+
+.solution-cta-section {
+	padding: 100px 6%;
+	background: linear-gradient(135deg, #7c3aed, #f808d4);
+	border-radius: 25px;
+	text-align: center;
+	margin-top: 50px;
+}
+
+.solution-cta-section .cta-content {
+	max-width: 600px;
+	margin: 0 auto;
+	color: #fff;
+}
+
+.solution-cta-section .cta-content h2 {
+	margin: 0 0 24px;
+	font-family: 'Space Grotesk', sans-serif;
+	font-size: clamp(36px, 4vw, 42px);
+	line-height: 1.2;
+}
+
+.solution-cta-section .cta-content p {
+	margin: 0 0 42px;
+	font-family: 'Space Grotesk', sans-serif;
+	font-size: 20px;
+	line-height: 1.6;
+	opacity: 0.9;
+}
+
+.solution-cta-section .cta-actions {
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	flex-wrap: wrap;
+}
+
+.solution-cta-section .cta-actions .primary-button {
+	background: #fff;
+	color: #7c3aed;
+	border: 2px solid #fff;
+	padding: 16px 32px;
+	font-size: 18px;
+	border-radius: 30px;
+	font-weight: 700;
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+
+.solution-cta-section .cta-actions .primary-button:hover {
+	background: transparent;
+	color: #fff;
+}
+
+.solution-cta-section .cta-actions .secondary-button {
+	background: transparent;
+	color: #fff;
+	border: 2px solid #fff;
+	padding: 16px 32px;
+	font-size: 18px;
+	border-radius: 30px;
+	font-weight: 700;
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+
+.solution-cta-section .cta-actions .secondary-button:hover {
+	background: #fff;
+	color: #7c3aed;
+}
